@@ -1,0 +1,291 @@
+.video_tutorials{
+    padding-bottom: 0;
+    position: relative;
+    margin-left: 24px;
+    margin-right: 24px;
+    @media #{$mobile}{
+        margin: 0px !important;
+    }
+    .section_subtitle{
+        color: $secondFontColor;
+        font-size: $headingThree;
+        font-weight: 600;
+        @media #{$mobile}{
+            font-size: 18px;
+        }
+    }
+
+    .section_description{
+        line-height: 22px;
+        max-width: 930px !important;
+    }
+
+    .container{
+        padding: 64px 0px;
+        border-radius: var(--Radius-corner-2, 14px);
+        box-shadow: 0px 16px 40px 0px rgba(210, 210, 210, 0.25);
+        background-color: $mainBgColor;
+
+        @media #{$bigTab}{
+            padding: 56px 24px;
+        }
+
+        @media #{$mobile}{
+            padding: 36px 20px 40px 20px;
+        }
+    }
+
+    .tutorials_row{
+        gap: 28px 0;
+        max-width: 1260px !important;
+        & > div{
+            display: none;
+
+            &.active{
+                display: block;
+            }
+
+            @media #{$bigTab}{
+                &:nth-child(3){
+                    display: none;
+                }
+            }
+        }
+
+        .tutorial_item{
+            
+
+            .tutorial_image{
+                position: relative;
+                margin-bottom: 20px;
+                & > img{
+                    width: 100%;
+                }
+                & > img:hover{
+                    cursor: pointer;
+                }
+
+                @media #{$mobile}{
+                    margin-bottom: 12px;
+                }
+            }
+
+            .tutorial_name{
+                font-size: $headingThree;
+                font-weight: 600;
+
+                @media #{$mobile}{
+                    font-size: 16px;
+                }
+            }
+
+            .play{
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                height: 64px;
+                width: 64px;
+                overflow: hidden;
+
+                @media #{$bigTab}{
+                    height: 36px;
+                    width: 36px;
+                }
+
+                svg{
+                    width: 100%;
+                    height: 64px;
+                    position: relative;
+                    z-index: 2;
+
+                    @media #{$bigTab}{
+                        height: 36px;
+                    }
+                }
+
+                &::after{
+                    content: '';
+                    display: block;
+                    height: 50px;
+                    width: 50px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    z-index: 1;
+                    background-color: $mainBgColor;
+                    border-radius: 50%;
+
+                    @media #{$bigTab}{
+                        height: 25px;
+                        width: 25px;
+                    }
+                }
+
+                &:hover{
+                    g{
+                        path{
+                            fill: #F45A69;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+
+        @media #{$mobile}{
+            gap: 24px 0;
+        }
+    }
+
+    .tutorials_all{
+        text-align: center;
+
+        .btn{
+            margin-top: 48px;
+            &.hidden{
+                display: none;
+            }
+
+            @media #{$bigTab}{
+                margin-top: 40px;
+            }
+            @media #{$mobile}{
+                margin-top: 32px;
+            }
+        }
+    }
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.modal-content {
+    position: relative;
+    background: #000000;
+    border-radius: 8px;
+    z-index: 1001; 
+    max-width: 50%;
+    height: fit-content;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    @media #{$mobile}{
+        max-width: 100%;
+    }
+}
+
+.video-wrapper {
+    width: 100%;
+    background-color: #000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content video {
+    max-width: 100%;
+    max-height: 800px;
+    width: auto;
+    height: auto;
+    z-index: 10;
+}
+
+
+
+
+.video_tutorials {
+    .section_subtitle {
+        margin-top: 20px;
+        @media #{$bigTab}{
+            margin-top: 24px;
+        }
+        @media #{$mobile}{
+            margin-top: 16px;
+        }
+    }
+    .section_description {
+        margin-top: 16px;
+        @media #{$bigTab}{
+            margin-top: 12px;
+        }
+    }
+    .tutorials_row {
+        margin-top: 44px;
+        @media #{$bigTab}{
+            margin-top: 36px;
+        }
+        @media #{$mobile}{
+            margin-top: 24px;
+        }
+    }
+}
+
+.video_tutorials {
+    .container {
+        display: flex;
+        justify-content: center;
+        max-width: 1520px !important;
+        border: #F45A69;
+        box-shadow: 0 16px 40px 0 rgba(210, 210, 210, 0.25);
+        background: #fff;
+        @media #{$bigLaptop}{
+            max-width: 1120px !important;
+        }
+        @media #{$bigTab}{
+            max-width: 940px !important;
+        }
+        @media #{$mobile}{
+            width: 100vw !important;
+            padding: 0px !important;
+            padding-top: 36px !important;
+            padding-bottom: 36px !important;
+        }
+    }
+}
+
+.container_video {
+    display: flex;
+    justify-content: center;
+    max-width: 1260px;
+    flex-direction: column;
+    width: 100% !important;
+    padding-left: 12px;
+    padding-right: 12px;
+    @media #{$bigLaptop}{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    @media #{$mobile}{
+        max-width: 540px !important;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,24 @@
+// Переменные шрифты/цвета/медиа-запросы
+$mainFontColor : #252F4A;
+$secondFontColor: #196FF1;
+$thirdFontColor: #539DF5;
+
+$mainActionColor: #FFC107; 
+
+$mainBgColor : #fff;
+$secondBgColor : #F6F6F6;
+$thirdBgColor: #F3F9FF;
+
+$backgroundGradientFirst : linear-gradient(222deg, #E5F2FD -22.82%, #FAEFFF 134.28%);
+$backgroundGradientSecond : linear-gradient(188deg, #FBF4FF -7.99%, #E6F3FF 108%);
+
+$basicFont : "Inter", sans-serif;
+$basicFontSize: 15px;
+
+$headingOne : 64px;
+$headingTwo : 40px;
+$headingThree: 20px;
+
+$bigTab : '(max-width: 1199px)';
+$mobile : '(max-width: 766px)';
+$bigLaptop : '(max-width: 1400px)';

@@ -1,0 +1,136 @@
+
+.about_us {
+    padding-top: 152px;
+    .about_us_title {
+        font-size: $headingTwo;
+        font-weight: 600;
+        margin-bottom: 32px;
+        @media #{$bigTab}{
+            font-size: 32px;
+            margin-bottom: 20px;
+         }
+         @media #{$mobile}{
+            font-size: 22px;
+            margin-bottom: 20px;
+         }
+    }
+    .about_us_title_two {
+        font-size: $headingThree;
+        margin-bottom: 20px;
+        @media #{$mobile}{
+            font-size: 18px;
+            margin-bottom: 16px;
+         }
+    }
+    
+
+    .about_us_description {
+        line-height: 26px;
+        margin-bottom: 20px;
+        max-width: 565px;
+        p {
+            margin-top: 20px;
+        }
+    }
+
+    .about_us_advantages {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px 0;
+        max-width: 370px;
+        margin-bottom: 48px;
+
+        @media #{$mobile} {
+            margin-bottom: 32px;
+        }
+    }
+
+    .about_us_advantages li {
+        display: flex;
+        gap: 0 8px;
+        line-height: 22px;
+        align-items: start;
+    }
+
+    .about_us_advantages li::before {
+        content: '';
+        display: block;
+        height: 20px;
+        width: 20px;
+        background-image: url(../images/advantage_check.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        flex: 0 0 auto;
+        margin-top: 2px;
+    }
+
+    @media #{$bigTab} {
+        padding-top: 182px;
+
+        img {
+            width: 100%;
+        }
+
+        .container {
+            position: relative;
+        }
+    }
+
+    @media #{$mobile} {
+        padding-top: 135px;
+
+        .row {
+            gap: 24px 0;
+        }
+    }
+}
+
+
+
+.about_us_img {
+    max-width: 590px;
+    max-height: 470px;
+    width: 100%;
+}
+
+.about_us_img_text {
+    font-size: 12px;
+    color: $mainFontColor;
+    opacity: 60%;
+    padding-top: 12px;
+}
+
+
+.why_choose_us_right_list > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+    max-width: 500px;
+    // margin-bottom: 48px;
+
+    @media #{$mobile}{
+        // margin-bottom: 28px;
+        gap: 12px 0;
+    }
+}
+
+.why_choose_us_right_list > ul > li{
+    display: flex;
+    gap: 0 8px;
+    line-height: 22px;
+    align-items: start;
+}
+
+.why_choose_us_right_list > ul > li::before{
+    content: '';
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-image: url(../images/advantage_check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 0 0 auto;
+    margin-top: 2px;
+}

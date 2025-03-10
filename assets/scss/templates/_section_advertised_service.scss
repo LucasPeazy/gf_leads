@@ -1,0 +1,167 @@
+.advertised_service{
+    background-color: $secondBgColor;
+    .section_subtitle{
+        margin-top: 16px;
+
+        @media #{$bigTab}{
+            max-width: 555px;
+            br{
+                display: none;
+            }
+        }
+        @media #{$mobile}{
+        }
+    }
+
+    .service_items{
+        gap: 28px 0;
+
+        .service_item{
+            border: 1px solid  $secondBgColor;
+
+            .card-body{
+                border-radius: 14px;
+                background: $mainBgColor;
+                padding: 32px;
+
+                @media #{$bigTab}{
+                    padding: 32px 20px;
+                    height: 100%;
+                }
+                @media #{$mobile}{
+                    padding: 20px 12px;
+                }
+                
+            }
+
+            .service_top{
+                position: relative;
+                padding-bottom: 16px;
+                margin-bottom: 16px;
+                border-bottom: 2px solid rgba(25, 111, 241, 0.70);
+
+                .service_icon{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+
+                    @media #{$bigTab}{
+                        right: -5px;
+                        img{
+                            width: 50px;
+                        }
+                    }
+
+                    @media #{$mobile}{
+                        right: 0;
+                        img{
+                            width: 46px;
+                        }
+                    }
+                }
+
+                .service_name{
+                    font-size: $headingThree;
+                    font-weight: 600;
+                    margin-bottom: 16px;
+
+                    @media #{$mobile}{
+                        font-size: 18px;
+                    }
+                }
+
+                .service_comission{
+                    .comission_title{
+                        font-size: 14px;
+                        color: rgba(37, 47, 74, 0.90);
+                        margin-bottom: 4px;
+                    }
+                    .comisson_value{
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                    .comission_link{
+                        font-size: 14px;
+                        color: $secondFontColor;
+                        border-bottom: 1px solid $secondFontColor;
+                    }
+                }
+            }
+
+            .service_bottom{
+                .service_description{
+                    line-height: 22px;
+                    margin-bottom: 31px;
+
+                    @media #{$bigTab}{
+                        min-height: 110px;
+                    }
+                }
+                .service_action{
+                    .btn{
+                        width: 100%;
+                        padding: 12.5px 25px;
+                    }
+                }
+            }
+
+            @media #{$bigTab}{
+                height: 100%;
+            }
+
+            @media #{$mobile}{
+                border-radius: var(--Radius-corner-2, 14px);
+                border: 1px solid var(--Neutral_300, #F1F1F4);
+                background: var(--Neutral_0, #FFF);
+            }
+        }
+
+        @media #{$mobile}{
+            gap: 16px 0;
+        }
+    }
+
+    @media #{$mobile}{
+        padding-bottom: 40px;
+    }
+}
+
+.advertised_service > .container > .service_items {
+    margin-top: 44px;
+    @media #{$bigTab}{
+        margin-top: 36px;
+    }
+    @media #{$mobile}{
+        margin-top: 24px;
+    }
+}
+
+.providers_ad {
+    max-width: 727px;
+}
+
+.two_columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+    @media #{$mobile}{
+        flex-direction: column;
+        gap: 25px;
+    }
+    @media #{$bigTab}{
+        max-width: 1000px !important;
+    }
+}
+
+.two_columns > div {
+    max-width: 600px;
+    width: 100%;
+}
+
+.two_columns > div > p {
+    margin-top: 16px;
+    @media #{$mobile}{
+        margin-top: 12px;
+    }
+}

@@ -1,0 +1,111 @@
+.why_affiliate{
+    &__item{
+        display: flex;
+        background: $backgroundGradientFirst;
+        
+        border-radius: 14px;
+        border: none;
+
+        .card-body{
+            display: flex;
+            gap: 0 33px;
+            padding: 45px 40px;
+        }
+
+        &.second{
+            background: $backgroundGradientSecond;
+        }
+
+        @media #{$bigTab}{
+            .card-body{
+                flex-direction: column;
+                padding: 28px 30px;
+                min-height: 446px !important;
+            }
+        }
+        @media #{$mobile}{
+            .card-body{
+                min-height: 404px !important;
+            }
+        }
+    }
+
+    &__title{
+        font-size: $headingThree;
+        font-weight: 600;
+        color: $mainFontColor;
+        margin-bottom: 16px;
+        margin-top: 50px;
+
+        @media #{$bigTab}{
+            margin-top: 0;
+        }
+
+        @media #{$mobile}{
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__description{
+        font-size: $basicFontSize;
+        line-height: 22px;
+        @media #{$bigTab}{
+            margin-bottom: 24px;
+        }
+        @media #{$mobile}{
+            margin-bottom: 16px;
+        }
+    }
+
+    &__right{
+        @media #{$bigTab}{
+            text-align: center;
+        }
+    }
+
+    .row{
+        @media #{$mobile}{
+            gap: 16px 0;
+        }
+    }
+}
+
+.why_affiliate__description {
+    @media #{$bigTab}{
+        min-height: 66px !important;
+    }
+}
+
+.why_affiliate__item {
+    @media #{$mobile}{
+        justify-content: center;
+    }
+}
+
+
+.why_affiliate__item .card-body {
+    @media #{$mobile}{
+       padding: 24px !important;
+    }
+}
+
+// Главный заголовок 
+
+.why_affiliate > .container > h2 {
+   margin-bottom: 44px;
+   @media #{$bigTab}{
+    margin-bottom: 36px;
+ }
+ @media #{$mobile}{
+    margin-bottom: 24px;
+ }
+}
+
+.width_304 {
+    min-width: 304px;
+    width: 100%;
+    @media #{$bigLaptop}{
+        min-width: auto;
+     }
+}

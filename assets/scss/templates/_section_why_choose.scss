@@ -1,0 +1,141 @@
+.why_choose{
+    padding-top: 152px !important;
+    @media #{$bigTab}{
+        padding-top: 112px !important;
+     }
+     @media #{$mobile}{
+        padding-top: 56px !important;
+     }
+    h2{
+        line-height: normal;
+        @media #{$bigTab}{
+            // position: absolute;
+            // left: 12px;
+            // top: -75px;
+            // width: 100%;
+
+            br{
+                display: none;
+            }
+
+            @media #{$mobile}{
+                left: 20px;
+                margin-bottom: 24px;
+            }
+        }
+
+        
+    }
+
+    .section_description{
+        line-height: 26px;
+        max-width: 551px !important;
+    }
+
+    .section_advantages{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px 0;
+        max-width: 500px;
+        // margin-bottom: 48px;
+
+        @media #{$mobile}{
+            // margin-bottom: 28px;
+            gap: 12px 0;
+        }
+    }
+
+    .section_advantages li{
+        display: flex;
+        gap: 0 8px;
+        line-height: 22px;
+        align-items: start;
+    }
+
+    .section_advantages li::before{
+        content: '';
+        display: block;
+        height: 20px;
+        width: 20px;
+        background-image: url(../images/advantage_check.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        flex: 0 0 auto;
+        margin-top: 2px;
+    }
+
+    @media #{$bigTab}{
+        padding-top: 182px;
+        img{
+            width: 100%;
+        }
+
+        .container{
+            position: relative;
+        }
+    }
+
+    @media #{$mobile}{
+        padding-top: 135px;
+
+        .row{
+            gap: 0px 0px 20px 0px;
+        }
+    }
+}
+
+.why_choose  {
+    h2 {
+    margin-bottom: 28px;
+    @media #{$bigTab}{
+        margin-bottom: 36px;
+    }
+    @media #{$mobile}{
+        margin-bottom: 24px;
+    }
+    }
+    .section_description {
+        margin-bottom: 20px;
+        @media #{$bigTab}{
+            margin-bottom: 16px;
+        }
+        @media #{$mobile}{
+            margin-top: 16px;
+        }
+    }
+    .btn {
+        margin-top: 48px;
+        @media #{$bigTab}{
+            margin-top: 32px;
+        }
+        @media #{$mobile}{
+            margin-top: 28px;
+        }
+    }
+}
+
+.why_choose  {
+    img {
+        max-width: 590px;
+        width: 100%;
+    }
+}
+
+.show_on_mobile_choose {
+    display: none;
+    @media #{$bigTab}{
+        display: flex ;
+    }
+}
+
+.hide_on_mobile_choose {
+    @media #{$bigTab}{
+        display: none !important;
+    }
+}
+
+
+.why_choose_full_right {
+    width: fit-content;
+}

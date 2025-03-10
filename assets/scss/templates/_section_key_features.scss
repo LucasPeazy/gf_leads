@@ -1,0 +1,121 @@
+.key_features{
+    .key_features__items{
+        gap: 28px 0;
+
+        .feature_item{
+            border-radius: 14px;
+            border: 1px solid #F1F1F4;
+            
+            .card-body{
+                min-height: 280px;
+                padding: 24px 30px;
+                min-height: 260px;
+                @media #{$bigLaptop}{
+                    min-height: 280px;
+                }
+                @media #{$mobile}{
+                    min-height: 0px !important;
+                }
+                .feature_icon{
+                    margin-bottom: 16px;
+
+                    @media #{$mobile}{
+                        margin-bottom: 8px;
+                        img{
+                            width: 46px;
+                        }
+                    }
+                }
+
+                .feature_name{
+                    font-size: $headingThree;
+                    font-weight: 600;
+                    margin-bottom: 40px;
+
+                    @media #{$bigTab}{
+                        margin-bottom: 24px;
+                    }
+
+                    @media #{$mobile}{
+                        font-size: 18px;
+                        margin-bottom: 16px;
+                    }
+                }
+
+                .feature_description{
+                    line-height: 22px;
+                    min-width: 342px;
+                    @media #{$bigLaptop}{
+                        min-width: auto;
+                    }
+                }
+
+                @media #{$mobile}{
+                    padding: 20px;
+                }
+            }
+
+            @media #{$bigTab}{
+                height: 100%;
+
+                .card-body{
+                    height: 100%;
+                }
+            }
+        }
+
+        @media #{$mobile}{
+            gap: 16px;
+
+            & > div:nth-child(n + 3){
+                display: none;
+            }
+        }
+    }
+
+    @media #{$mobile}{
+        padding-bottom: 56px;;
+    }
+}
+
+// Главный заголовок 
+
+.key_features__items {
+    margin-top: 44px;
+    @media #{$bigTab}{
+     margin-top: 36px;
+  }
+  @media #{$mobile}{
+     margin-top: 24px;
+  }
+ }
+
+ .key_features {
+    padding-bottom: 152px !important;
+    @media #{$bigTab}{
+        padding-bottom: 112px !important;
+     }
+     @media #{$mobile}{
+        padding-bottom: 56px !important;
+     }
+ }
+ 
+ .adjuster_card_body {
+    @media #{$bigLaptop}{
+        min-height: 308px !important;
+     }
+ }
+
+ .service_providers_body {
+    min-height: 255px !important;
+    @media #{$bigTab}{
+        min-height: 260px !important;
+     }
+ }
+
+ .key_features_description {
+    margin-top: 20px;
+    @media #{$mobile}{
+        margin-top: 16px;
+     }
+ }

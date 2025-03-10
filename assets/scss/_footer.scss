@@ -1,0 +1,323 @@
+// Классы для футера
+
+footer{
+    color: $mainBgColor;
+    padding: 44px 0 24px 0;
+    background-color: $mainFontColor;
+
+    .footer_top .row{
+        padding-bottom: 32px;
+        border-bottom: 1px solid rgba(244, 248, 255, 0.50);
+    }
+
+    .row{
+        justify-content: space-between;
+
+        @media #{$mobile}{
+            gap: 28px 0;
+        }
+    }
+    .footer_col{
+        flex: 0 0 auto;
+        width: fit-content;
+        @media #{$bigTab}{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        @media #{$mobile}{
+            width: 100%;
+
+            &:last-child{
+                margin-top: 14px;
+            }
+        }
+    }
+
+    .footer_logo{
+        display: block;
+        margin-bottom: 8px !important;
+
+        @media #{$bigTab}{
+            margin-bottom: 8px;
+        }
+
+        @media #{$mobile}{
+            img{
+                max-width: 134px;
+            }
+        }
+    }
+
+    .footer_slogan{
+        max-width: 185px;
+        margin-bottom: 28px;
+        @media #{$bigTab}{
+            margin-bottom: 20px;
+        }
+
+        @media #{$mobile}{
+            margin-bottom: 0px;
+        }
+    }
+
+    .footer_apps{
+        display: flex;
+        gap: 10px 10px;
+        flex-direction: column;
+        a{
+            img{
+                transition: .3s all ease;
+            }
+
+            &:hover{
+            }
+        }
+
+        @media #{$bigTab}{
+            flex-direction: column;
+            gap: 10px 0;
+        }
+
+        @media #{$mobile}{
+            flex-direction: row;
+            gap: 0 14px;
+        }
+       
+    }
+
+    .footer_nav{
+        display: flex;
+        gap: 0 96px;
+
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 16px 0;
+
+            a{
+                color: $secondBgColor;
+                white-space: nowrap;;
+
+                &:hover{
+                    color: $mainActionColor;
+                }
+            }
+
+            @media #{$mobile}{
+                gap: 20px;
+            }
+        }
+
+        @media #{$bigTab}{
+            gap: 0 25px;
+            font-size: 14px;
+            justify-content: space-between;
+            width: 100%;
+            padding-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        @media #{$mobile}{
+            margin-left: 0;
+            gap: 48px 42px;
+            padding-top: 0px;
+        }
+        @media (max-width: 575px) {
+            justify-content: flex-start !important;
+        }
+    }
+
+    .footer_contacts_title{
+        margin-bottom: 11px;
+    }
+
+    .photer_phone{
+        margin-bottom: 23px;
+
+       a{
+        color: $mainActionColor;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 0 2px;
+        @media #{$mobile}{
+            justify-content: start;
+        }
+       }
+
+       @media #{$mobile}{
+        margin-bottom: 36px;
+       }
+    }
+
+    .footer_social{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        gap: 0 10px;
+
+        a{
+            svg{
+                transition: .3s all ease;
+            }
+
+            &:hover{
+
+                &:not(.stroke){
+                    svg{
+                        path{
+                            fill: $mainActionColor;
+                        }
+                    }
+                }
+                &.stroke{
+                    svg{
+                        path{
+                            stroke: $mainActionColor;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media #{$mobile}{
+            justify-content: flex-start;
+            gap: 0 24px;
+        }
+    }
+
+    .footer_bottom{
+        padding: 20px 0 24px 0;
+        @media #{$mobile}{
+            padding: 20px 0 0px 0;
+        }
+    }
+
+    .copyright{
+        color: rgba(241, 241, 244, 0.60);
+        font-size: 14px !important;
+        font-weight: 400 !important;
+    }
+    .bottom_link{
+        display: flex;
+        gap: 0 32px;
+        justify-content: end;
+        a{
+            color: rgba(241, 241, 244, 0.60);
+            font-size: 14px;
+
+            &:hover{
+                color: $mainActionColor;
+            }
+        }
+
+        @media #{$mobile}{
+            justify-content: flex-start;
+        }
+    }
+
+    @media #{$mobile}{
+        padding: 40px 0 24px 0;
+
+        .footer_bottom{
+            .row{
+                gap: 12px 0;
+            }
+        }
+    }
+}
+
+.footer_nav >  ul > :first-child > a {
+    color: #F6F6F666 !important;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.phone_tab {
+    display: none;
+    @media #{$bigTab}{
+        display: block;
+    }
+    @media #{$bigTab}{
+        display: block;
+    }
+}
+
+footer .footer_top .row {
+    @media #{$bigTab}{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.hide_tab {
+    @media #{$bigTab}{
+        display: none !important;
+    }
+    @media #{$mobile}{
+        display: none !important;
+    }
+}
+
+.phone_tab > a {
+    margin-bottom: 20px;
+}
+
+.hide_mobile {
+    @media #{$mobile}{
+        display: none !important;
+    }
+}
+
+.show_mobile {
+    display: none !important;
+    @media #{$mobile}{
+        display: flex !important;
+        flex-direction: column;
+    }
+}
+
+.show_mobile > .footer_contacts_title {
+    padding-top: 36px;
+    font-weight: 400 !important;
+    font-size: 14px;
+}
+
+.show_mobile > a {
+    color: #FFC107;
+    display: flex;
+    align-items: center;
+    gap: 0 2px;
+    margin-bottom: 38px !important;
+}
+
+
+footer .footer_contacts_title {
+    color: #f6f6f6;
+}
+
+
+.footer_nav > :nth-child(3) {
+    @media #{$mobile}{
+        width: 100%;
+        max-height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+} 
+
+.footer_nav > :nth-child(3) > :nth-child(4) {
+    @media #{$mobile}{
+        margin-top: 39px;
+    }
+
+}
+
+.footer .copyright {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}

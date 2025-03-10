@@ -1,0 +1,26 @@
+# Включение перезаписи URL
+RewriteEngine On
+
+# Специальное правило для главной страницы (home)
+RewriteCond %{THE_REQUEST} \s/pages/home/index\.php [NC]
+RewriteRule ^pages/home/index\.php$ / [R=301,L]
+
+# Главная страница
+RewriteRule ^$ /index.php [L]
+
+# Убедимся, что запрос не направлен к существующему файлу или директории
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Универсальное правило для перенаправления красивых URL
+RewriteRule ^([^/]+)/?$ /pages/$1/index.php [L]
+
+# Перенаправление длинных ссылок на короткие (исключая home)
+RewriteCond %{THE_REQUEST} \s/pages/([^/]+)/index\.php [NC]
+RewriteCond %{REQUEST_URI} !/pages/home/index\.php [NC]
+RewriteRule ^pages/([^/]+)/index\.php$ /$1/ [R=301,L]
+
+# Запрет на индексацию через заголовок X-Robots-Tag
+<IfModule mod_headers.c>
+    Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>

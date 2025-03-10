@@ -1,0 +1,102 @@
+.benefits{
+    padding-top: 236px !important;
+    @media #{$bigTab}{
+        padding-top: 186px !important;
+     }
+     @media #{$mobile}{
+        padding-top: 156px !important;
+     }
+    background-color: $thirdBgColor;
+    margin-top: -85px;
+
+    h2{
+        margin-bottom: 64px;
+
+        @media #{$bigTab}{
+            margin-bottom: 36px;
+        }
+
+        @media #{$mobile}{
+            margin-bottom: 24px;
+        }
+    }
+
+    .row{
+        justify-content: center;
+        gap: 60px 100px;
+        .col{
+            flex: 0 0 auto;
+            width: calc(33% - 68px);
+
+            .benefit_icon{
+                margin-bottom: 10px;
+
+                @media #{$mobile}{
+                    margin-bottom: 4px;
+                    img{
+                        width: 50px;
+                    }
+                }
+            }
+
+            .benefit_name{
+                color: #7A6CF0;
+                font-size: $headingThree;
+                font-weight: 600;
+                margin-bottom: 20px;
+
+                @media #{$mobile}{
+                    font-size: 18px;
+                    margin-bottom: 12px;
+                }
+            }
+
+            .benefit_description{
+                line-height: 22px; 
+                min-width: 352px;
+                @media #{$mobile}{
+                    min-width: auto;
+                }
+
+            }
+
+            @media #{$bigTab}{
+                width: calc(50% - 12px);
+            }
+
+            @media #{$mobile}{
+                width: 100%;
+
+                &:nth-child(n+4){
+                    display: none;
+                }
+            }
+        }
+
+        @media #{$bigTab}{
+            gap: 40px 0;
+            justify-content: space-between;
+        }
+
+        @media #{$bigTab}{
+            gap: 20px 0;
+        }
+    }
+
+    @media #{$bigTab}{
+        padding-top: 190px;
+    }
+
+    @media #{$mobile}{
+        padding-top: 140px;
+        padding-bottom: 56px;
+
+        .all{
+            margin-top: 28px;
+        }
+    }
+}
+
+.show_benefit {
+    display: block !important;
+}

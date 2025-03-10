@@ -1,0 +1,18 @@
+/* Error: Undefined variable.
+ *    ,
+ * 13 |         @media #{$bigTab}{
+ *    |                  ^^^^^^^
+ *    '
+ *   assets\scss\pages\providers\blocks\_section_providers_program_intro.scss 13:18  @import
+ *   assets\scss\pages\providers\providers.scss 2:9                                  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 13 \2502          @media #{$bigTab}{\a    \2502                   ^^^^^^^\a    \2575 \a   assets\\scss\\pages\\providers\\blocks\\_section_providers_program_intro.scss 13:18  @import\a   assets\\scss\\pages\\providers\\providers.scss 2:9                                  root stylesheet";
+}

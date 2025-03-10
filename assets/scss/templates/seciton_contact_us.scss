@@ -1,0 +1,163 @@
+.contact_us {
+    .container {
+    }
+}
+
+.contact_us_desc {
+    max-width: 905px;
+    margin-top: 16px;
+    @media #{$mobile}{
+        margin-top: 12px;
+    }
+}
+
+/* Стили для конкретной формы */
+.contact-us-form {
+    min-width: 535px;
+    width: 100%;
+    font-family: $basicFont;
+    padding-top: 25px;
+    @media #{$mobile}{
+     min-width: auto;
+  }
+  }
+
+  .contact-us-form > div {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+  }
+  .contact-us-form > div > div {
+    width: 100%;
+  }
+  /* Стили для полей ввода в custom-form */
+  .contact-us-form input[type="text"],
+  .contact-us-form input[type="tel"],
+  .contact-us-form input[type="email"],
+  .contact-us-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d9e1f2;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+  
+  .contact-us-form input:focus,
+  .contact-us-form textarea:focus {
+    border-color: #96c2f7;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Стили для заголовков полей */
+  .contact-us-form label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6b6e78;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Стили для текстового поля */
+  .contact-us-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Стили кнопки */
+  .contact-us-form button[type="submit"] {
+    background-color: #ffc107;
+    color: #252F4A;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .contact-us-form button[type="submit"]:hover {
+  }
+  
+  /* Стили для ссылки на политику */
+  .contact-us-form .privacy-policy {
+    font-size: 12px;
+    color: #6b6e78;
+    margin-top: 10px;
+  }
+  
+  .contact-us-form .privacy-policy a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-us-form .privacy-policy a:hover {
+    text-decoration: underline;
+  }
+  
+
+  .contact_us_wrapper {
+    display: flex;
+    background-color: #F3F9FF;
+    padding: 56px 60px;
+    margin-top: 44px;
+    width: 100%;
+    border-radius: 14px;
+    @media #{$mobile}{
+      padding: 22px 32px;
+  }
+  }
+
+  .contact_us_content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    @media #{$bigTab}{
+      flex-direction: column;
+      gap: 25px;
+  }
+    h3 {
+      font-size: 32px;
+      @media #{$bigTab}{
+        font-size: 26px;
+    }
+      @media #{$mobile}{
+        font-size: 22px;
+    }
+    }
+  }
+
+  .contact_us_left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .contact_us_right {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+    @media #{$bigTab}{
+      width: 100%;
+  }
+  }
+
+  .contact_us_left > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: #252F4A;
+    font-size: 20px;
+    list-style: none;
+  }
+
+  .contact_us_left > ul > li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }

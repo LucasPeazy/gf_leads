@@ -1,0 +1,37 @@
+// Импорт всех стилей 
+@import "vars";
+@import "fonts";
+@import "settings";
+
+@import "header";
+// Импорт уникальных scss для страниц ( в основном интро )
+@import "pages/publishers/publishers";
+@import "pages/adjusters/adjusters";
+@import "pages/online-marketers/online-marketers";
+@import "pages/providers/providers";
+@import "pages/home/home";
+@import "pages/blog_grid/section_blogs_grid";
+// Templates для страниц ( общие )
+@import "templates/section_why_afflate"; 
+@import "templates/section_expand_your_reach"; 
+@import "templates/section_why_afflate_slider__solo"; 
+@import "templates/section_key_features"; 
+@import "templates/section_advertised_service"; 
+@import "templates/section_why_choose";
+@import "templates/section_video_tutorials";
+@import "templates/section_benefits";
+@import "templates/section_reviews";
+@import "templates/section_ad_programm"; 
+@import "templates/section_blog"; 
+@import "templates/section_faq"; 
+@import "templates/section_audience"; 
+@import "templates/section_choose_your_way";
+@import "templates/section_about_us";
+@import "templates/section_why_choose_us";
+@import "templates/section_benefits_v2_main";
+@import "templates/section_programs";
+@import "templates/section_download";
+@import "templates/seciton_contact_us.scss";
+@import "templates/section_blogs_grid";
+@import "templates/section_blog_page";
+@import "footer";

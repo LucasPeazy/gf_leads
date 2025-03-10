@@ -1,0 +1,149 @@
+.ad_program {
+    .ad_program__container {
+        padding: 96px 60px 96px 84px;
+        background-color: $thirdBgColor;
+        border-radius: 14px;
+
+        @media #{$bigTab} {
+            padding: 56px 24px;
+        }
+
+        @media #{$mobile} {
+            padding: 32px 20px 40px 20px;
+        }
+    }
+
+    .ad_program__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 96px 47px 96px 84px;
+        @media #{$bigTab} {
+            align-items: flex-start;
+            padding: 40px 0px 40px 0px;
+        }
+        @media #{$mobile} {
+            flex-direction: column;
+            gap: 24px 0;
+        }
+    }
+
+    .ad_program__image {
+        max-width: 45%; 
+        @media #{$mobile} {
+            max-width: 100%;
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            border-radius: 16px;
+        }
+    }
+
+    .ad_program__content {
+        max-width: 50%; 
+        @media #{$mobile} {
+            max-width: 100%;
+            width: 100%;
+        }
+        h2 {
+            color: $secondFontColor;
+            font-weight: 600;
+            line-height: normal;
+
+            @media #{$mobile} {
+                font-size: 22px;
+            }
+        }
+
+        .ad_program__subtitle {
+            font-size: $headingThree;
+            font-weight: 600;
+            margin-top: 20px;
+
+            @media #{$mobile} {
+                font-size: 18px;
+                margin-top: 12px;
+            }
+        }
+
+        .ad_program__advantages {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 16px 0;
+            max-width: 550px !important;
+            margin-top: 36px;
+            font-size: $headingThree;
+            line-height: 26px;
+
+            li {
+                display: flex;
+                gap: 0 8px;
+                line-height: 22px;
+                align-items: start;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    height: 20px;
+                    width: 20px;
+                    background-image: url(../images/advantage_check.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    flex: 0 0 auto;
+                    margin-top: 2px;
+                }
+            }
+
+            @media #{$bigTab} {
+                margin-top: 28px;
+            }
+
+            @media #{$mobile} {
+                font-size: 18px;
+                margin-top: 24px;
+                gap: 12px;
+            }
+        }
+
+        .ad_program__btn {
+            font-size: 16px;
+            padding: 15px 86px;
+            margin-top: 52px;
+            font-weight: 600;
+            border-radius: 8px;
+            background-color: $mainActionColor;
+            @media #{$bigTab} {
+                margin-top: 36px;
+            }
+
+            @media #{$mobile} {
+                max-width: 100%;
+                margin-top: 28px;
+            }
+        }
+    }
+}
+
+.has_subtitle > br {
+    @media #{$bigTab} {
+        display: none;
+    }
+}
+
+.ad_program__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ad_program__btn:visited { 
+    color: initial;
+}
+
+.ad_program  > .container {
+    background-color: $thirdBgColor;
+    border-radius: 14px;
+}

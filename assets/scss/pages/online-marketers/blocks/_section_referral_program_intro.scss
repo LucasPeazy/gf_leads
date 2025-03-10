@@ -1,0 +1,173 @@
+.referral_page_intro{
+    padding: 185px 0 0px 0 !important;  
+    &__title{
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 72px;
+        margin-bottom: 20px;
+
+        span{
+            color: #539DF5;
+        }
+
+        @media #{$bigTab}{
+            font-size: 43px;
+            line-height: 48px;
+            margin-bottom: 20px;
+            width: 400px;
+        }
+
+        @media #{$mobile}{
+            font-size: 28px;
+            line-height: normal;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__description{
+        font-size: 15px;
+        max-width: 675px;
+        margin-right: 25px;
+        line-height: 26px; 
+        color: #252F4A;
+        margin-bottom: 24px;
+
+        @media #{$bigTab}{
+            margin-bottom: 24px;
+            margin-right: 12px;
+            line-height: 147%;
+        }
+
+        @media #{$mobile}{
+            margin-bottom: 16px;
+        }
+        
+    }
+
+    &__advantages{
+        display: flex;
+        flex-direction: column;
+        gap: 16px 0;
+        margin-bottom: 44px;
+        list-style-position: inside;
+
+        li{
+            &::marker{
+                color: #FFD040;
+            }
+        }
+
+        @media #{$bigTab}{
+            margin-bottom: 32px;
+        }
+
+        @media #{$mobile}{
+            gap: 12px 0;
+            margin-bottom: 28px;
+        }
+    }
+
+    &__image{
+        max-width: 705px;
+        max-height: 524px;
+        height: 100%;
+        transform: translateX(25px);
+
+        @media #{$bigLaptop} {
+            transform: translateX(0px);
+            width: 100%;
+            height: auto;
+    }
+
+        @media #{$bigTab}{
+            max-width: 100%;
+        }
+
+        @media #{$mobile}{
+            padding-top: 28px;
+            transform: translateX(0px);
+        }
+    }
+
+    @media #{$bigTab}{
+        padding: 140px 0 56px 0;
+    }
+
+    @media #{$mobile}{
+        padding: 102px 0 28px 0;
+
+        .btn{
+            width: 100%;
+        }
+    }
+}
+
+.referral_page_intro__benefits > ul {
+    list-style: inside;
+    font-size: $basicFontSize;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: $mainFontColor;
+    @media #{$mobile}{
+        gap: 12px;
+    }
+}
+
+.referral_page_intro__benefits > ul > li::marker {
+    color: #FFD040;
+}
+.referral_page_intro__benefits > ul > li {
+    list-style: none; /* Отключаем стандартные маркеры */
+    position: relative; /* Для работы псевдоэлемента */
+    padding-left: 16px; /* Отступ для маркера */
+    margin-right: 12px;
+    &::before{
+        content: ""; /* Создаем кастомный маркер */
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%); /* Центрируем маркер */
+        background-color: #FFD040; /* Цвет маркера */
+        border-radius: 50%; /* Круглая форма */
+        width: 6px; /* Ширина маркера */
+        height: 6px; /* Высота маркера */
+        margin-right: 12px;
+    }
+}
+
+.referral_page_intro__button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 56px 15px 56px;
+    background-color: #FFC107;
+    margin-top: 45px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: $mainFontColor;
+    cursor: pointer;
+    @media #{$bigTab}{
+        margin-top: 32px;
+    }
+    @media #{$bigTab}{
+        margin-top: 28px;
+    }
+
+}
+
+.referral_page_intro__button:hover {
+    background-color: #FFD040
+}
+
+.bigtab_center {
+    @media #{$bigTab}{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // transform: translateX(-50px);
+    }
+    @media #{$mobile} {
+        transform: translateX(-0px);
+    }
+}

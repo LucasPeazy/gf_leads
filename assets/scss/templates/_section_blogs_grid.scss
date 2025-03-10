@@ -1,0 +1,172 @@
+.blogs_grid {
+    padding: 150px 0 124px 0 !important;  
+    @media #{$bigTab}{
+        padding: 100px 0 124px 0 !important;  
+    }
+    @media #{$mobile}{
+        padding: 80px 0 124px 0 !important;  
+    }
+    h2 {
+        font-size: 40px;
+        @media #{$bigTab}{
+            font-size: 32px;
+        }
+    }
+}
+
+.blog_item{
+    border-radius: 14px;
+    border: 1px solid rgba(37, 47, 74, 0.20);
+    background: $mainBgColor;
+    overflow: hidden;
+
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        height: 100%;
+        @media #{$mobile}{
+            height: auto;
+        }
+        .blog_image{
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .blog_info{
+            padding: 16px 24px 24px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 300px;
+            
+            .blog_date{
+                line-height: 22px;
+                color: rgba(37, 47, 74, 0.70);
+                margin-bottom: 12px;
+            }
+
+            .blog_title{
+                font-size: $headingThree;
+                color: $mainFontColor;
+                margin-bottom: 12px;
+                font-weight: 600;
+                line-height: normal;
+                display: block;
+            }
+
+            .blog_excerpt{
+                line-height: 22px;
+            }
+
+            @media #{$mobile}{
+                padding: 16px 12px;
+            }
+        }
+
+        .blog_action{
+            margin-top: 10px;
+
+            @media #{$mobile}{
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+.hidden_blog {
+    display: none !important;
+}
+
+
+.blogs_grid_сontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 элемента в строке по умолчанию */
+    gap: 20px; /* отступы между элементами, можно настроить по своему усмотрению */
+  
+    @media #{$bigTab} {
+      grid-template-columns: repeat(2, 1fr); /* 2 элемента в строке на больших экранах */
+    }
+  
+    @media #{$mobile} {
+      grid-template-columns: 1fr; /* 1 элемент в строке на мобильных */
+    }
+  }
+  
+
+  .filters {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+    margin-bottom: 44px;
+    @media #{$bigTab} {
+        margin-top: 28px;
+        margin-bottom: 36px;
+      }
+      @media #{$mobile} {
+        margin-top: 22px;
+        margin-bottom: 28px;
+      }
+  }
+
+.filter-btn {
+    background: #FFFFFF;
+    border: 1px solid #252F4A33;
+    font-size: 16px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    color:#252f4ac7;
+}
+
+.filter-btn:hover {
+    cursor: pointer;
+    color:#252f4a;
+}
+
+.active_filter {
+   color:#539DF5;
+   border: 1px solid #539DF5;
+}
+
+.active_filter:hover {
+    color:#539DF5;
+    border: 1px solid #539DF5;
+ }
+ 
+ .filter-select {
+    display: none; /* По умолчанию скрыт */
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.filter-select {
+    display: none; /* По умолчанию скрыт */
+    background: #FFFFFF;
+    border: 1px solid #252F4A33;
+    font-size: 16px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    color:#252f4ac7;
+}
+
+
+@media screen and (max-width: 768px) { /* Замените на нужную переменную или значение */
+    .filter-buttons {
+        display: none; /* Скрываем кнопки */
+    }
+
+    .filter-select {
+        display: block; /* Показываем select */
+    }
+}

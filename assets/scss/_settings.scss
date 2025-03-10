@@ -1,0 +1,258 @@
+// Общие настройки/обнуления стилей/ссылок
+*,ul,ol,p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $basicFont;
+    font-size: $basicFontSize;
+    color: $mainFontColor;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper{
+    overflow: hidden;
+
+    &.menu_opened{
+        height: 100vh;
+    }
+}
+
+section{
+    padding-top: 76px;
+    padding-bottom: 76px;
+
+    @media #{$bigTab}{
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    @media #{$mobile}{
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+}
+
+a{
+    text-decoration: none;
+    transition: .3s all ease;
+}
+
+
+.container{
+    @media (min-width: 1400px){
+        max-width: 1260px !important;
+    }
+
+    @media #{$mobile}{
+        padding: 0 20px;
+    }
+}
+
+h2{
+    font-size: $headingTwo;
+    font-weight: 600;
+
+    @media #{$bigTab}{
+        font-size: 32px;
+    }
+    @media #{$mobile}{
+        font-size: 22px;
+    }
+}
+
+.btn{
+    border-radius: 8px;
+    padding: 10px 28px;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 600;
+    &.btn-white{
+        color: $mainFontColor;
+        border: 1px solid rgba(37, 47, 74, 0.20);
+        background-color: $mainBgColor;
+
+        &:hover{
+            background-color: rgba(37, 47, 74, 0.2);
+            border: 1px solid rgba(37, 47, 74, 0);
+        }
+    }
+
+    &.btn-orange{
+        border: 1px solid $mainActionColor;
+        background-color: $mainActionColor;
+
+        &:hover{
+            background-color: #FFCA2C;
+        }
+    }
+
+    &.btn-lg{
+        padding: 15px 56px;
+        font-size: 16px;
+    }
+
+    @media #{$mobile}{
+        width: 100%;
+    }
+}
+
+.form-control{
+    height: 42px;
+    border-radius: 8px;
+    border: 1px solid rgba(37, 47, 74, 0.20);
+    background: $mainBgColor;
+    padding: 0 20px;
+    font-size: 15px;
+}
+
+.form-control::placeholder{
+    color: rgba(37, 47, 74, 0.50);
+}
+
+.all{
+    display: none;
+    margin-top: 16px;
+    a{
+        width: 100%;
+        display: block;
+        padding: 15px;
+        border-radius: 8px;
+        border: 1px solid #196FF1;
+        color: #196FF1;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    @media #{$mobile}{
+        display: block;
+
+        &.hidden{
+            display: none;
+        }
+    }
+}
+
+.all{
+    text-align: center;
+
+    .btn{
+        margin-top: 48px;
+        &.hidden{
+            display: none;
+        }
+
+        @media #{$bigTab}{
+            margin-top: 40px;
+        }
+        @media #{$mobile}{
+            margin-top: 32px;
+        }
+    }
+}
+
+
+.header__nav ul a.active::after {
+    width: 100%; 
+}
+
+.active {
+    opacity: 1 !important;
+}
+
+
+.nav_next:active > svg > circle {
+    fill: #539DF5 !important;
+}
+
+.nav_prev:active > svg > circle {
+    fill: #539DF5 !important;
+}
+
+.all a:visited {
+    text-decoration: none;
+    color: #196FF1;
+    font-weight: 600;
+}
+
+.reviews_navigation > .nav_prev:hover > svg > path {
+    fill:  #196FF1;
+}
+
+.reviews_navigation > .nav_next:hover > svg > path  {
+    fill:  #196FF1;
+}
+
+.navigation > .nav_prev:hover > svg > path {
+    fill:  #196FF1;
+}
+
+.navigation > .nav_next:hover > svg > path  {
+    fill:  #196FF1;
+}
+.faq_answer > a {
+    text-decoration: none !important;
+}
+.faq_answer > a:visited {
+    text-decoration: none;
+    color: #196FF1;
+}
+
+.active_nav {
+    font-weight: 600 !important;
+}
+
+.hide_header {
+    border-bottom: 0px !important;
+}
+
+.btn {
+    color: initial !important;
+    &:visited {
+        color: initial !important;
+    }
+}
+
+.ad_program__btn {
+    color: initial !important;
+    &:visited {
+        color: initial !important;
+    }
+}
+
+.header__nav a.active {
+    font-weight: bold;
+}
+
+.header__nav .submenu a.active {
+    font-weight: 600 !important;
+}
+
+.header__nav li.active > a {
+    font-weight: 600 !important;
+}
+
+.menu_top a.active {
+    font-weight: bold;
+}
+
+.menu_top .submenu a.active {
+    font-weight: 600 !important;
+}
+
+.menu_top li.active > a {
+    font-weight: 600 !important;
+}
+
+.header_button {
+    display: flex;
+    justify-content: center;
+    width: 86px !important;
+}
+

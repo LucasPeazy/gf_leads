@@ -1,0 +1,121 @@
+.intro_providers{
+    padding: 185px 0 0px 0 !important;     
+    h1{
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 72px;
+        margin-bottom: 20px;
+
+        span{
+            color: #539DF5;
+        }
+
+        @media #{$bigTab}{
+            width: 423px !important;
+            font-size: 43px;
+            line-height: 48px;
+            margin-bottom: 20px;
+        }
+
+        @media #{$mobile}{
+            width: auto !important;
+            font-size: 28px;
+            line-height: normal;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__description{
+        font-size: 15px;
+        line-height: 133%; 
+        color: #252F4A;
+        margin-bottom: 24px;
+        max-width: 690px;
+        @media #{$bigTab}{
+            max-width: 327px;
+            margin-bottom: 24px;
+        }
+        @media #{$mobile}{
+            margin-bottom: 20px;
+        }
+    }
+
+    &__advantages{
+        display: flex;
+        flex-direction: column;
+        gap: 16px 0;
+        margin-bottom: 44px;
+        list-style-position: inside;
+
+        li {
+            list-style: none; /* Отключаем стандартные маркеры */
+            position: relative; /* Для работы псевдоэлемента */
+            padding-left: 16px; /* Отступ для маркера */
+            margin-right: 12px;
+            &::before{
+                content: ""; /* Создаем кастомный маркер */
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%); /* Центрируем маркер */
+                background-color: #FFD040; /* Цвет маркера */
+                border-radius: 50%; /* Круглая форма */
+                width: 6px; /* Ширина маркера */
+                height: 6px; /* Высота маркера */
+                margin-right: 12px;
+            }
+        }
+
+        @media #{$bigTab}{
+            margin-bottom: 32px;
+        }
+
+        @media #{$mobile}{
+            gap: 12px 0;
+            margin-bottom: 28px;
+        }
+    }
+
+    &__image{
+        max-width: 612px;
+        transform: translateX(30px);
+        @media #{$bigLaptop} {
+            transform: translateX(0px);
+            width: 100%;
+    }
+
+        @media #{$bigTab}{
+            transform: none;
+            max-width: 100%;
+            padding-top: 96px;
+        }
+
+        @media #{$mobile}{
+            margin-top: 28px;
+            padding-top: 0px;
+        }
+    }
+
+    @media #{$bigTab}{
+        padding: 140px 0 0px 0;
+    }
+
+    @media #{$mobile}{
+        padding: 92px 0 0px 0;
+
+        .btn{
+            width: 100%;
+        }
+    }
+}
+
+
+@media #{$mobile}{
+    .intro  > .container > .row > .text-end {
+        text-align: center !important;
+    }
+}
+
+.providers_description {
+    max-width: 606px !important;
+}

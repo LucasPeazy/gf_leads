@@ -1,0 +1,18 @@
+# User-agent: *
+# Disallow: /tag/
+# Disallow: /publishers/auth
+# Disallow: /? 
+# Disallow: *?s=  
+# Disallow: *&s=       
+# Disallow: /search
+# Disallow: */xmlrpc.php 
+# Disallow: /cgi-bin
+# Disallow: */embed$
+# Disallow: */utm=
+# Disallow: */?slug
+# Disallow: */tag/
+# Disallow: */utm
+# Disallow: */?utm
+
+
+Sitemap: https://gfleads.com/sitemap.xml
